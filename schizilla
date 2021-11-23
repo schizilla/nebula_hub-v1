@@ -1,0 +1,105 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Label = Instance.new("TextLabel")
+local Label_2 = Instance.new("TextLabel")
+local midhold = Instance.new("TextButton")
+local lowhold = Instance.new("TextButton")
+local Label_3 = Instance.new("TextLabel")
+local Label_4 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderColor3 = Color3.fromRGB(67, 255, 57)
+Main.Position = UDim2.new(0.552911401, 0, 0.349453926, 0)
+Main.Size = UDim2.new(0, 518, 0, 214)
+Main.Active = true
+Main.Draggable = true
+
+Label.Name = "Label"
+Label.Parent = Main
+Label.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Label.BorderColor3 = Color3.fromRGB(67, 255, 57)
+Label.Size = UDim2.new(0, 518, 0, 29)
+Label.Font = Enum.Font.SourceSansLight
+Label.Text = "Nebula hub V1"
+Label.TextColor3 = Color3.fromRGB(67, 255, 57)
+Label.TextSize = 14.000
+Label.TextStrokeColor3 = Color3.fromRGB(67, 255, 57)
+Label.TextStrokeTransparency = 0.500
+
+Label_2.Name = "Label"
+Label_2.Parent = Main
+Label_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Label_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Label_2.Position = UDim2.new(0.0575920679, 0, 0.0338423848, 0)
+Label_2.Size = UDim2.new(0, 145, 0, 14)
+Label_2.Font = Enum.Font.SourceSans
+Label_2.Text = "made by schizilla/dre#4707"
+Label_2.TextColor3 = Color3.fromRGB(67, 255, 57)
+Label_2.TextSize = 14.000
+Label_2.TextStrokeTransparency = 0.000
+Label_2.TextTransparency = 0.500
+
+midhold.Name = "midhold"
+midhold.Parent = Main
+midhold.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+midhold.BorderColor3 = Color3.fromRGB(67, 255, 57)
+midhold.Position = UDim2.new(0.0752895772, 0, 0.359813213, 0)
+midhold.Size = UDim2.new(0, 180, 0, 56)
+midhold.Font = Enum.Font.SourceSans
+midhold.Text = "mid-hold"
+midhold.TextColor3 = Color3.fromRGB(67, 255, 57)
+midhold.TextSize = 14.000
+midhold.TextStrokeColor3 = Color3.fromRGB(67, 255, 57)
+midhold.TextStrokeTransparency = 0.500
+midhold.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/schizilla/weird-lowhold/main/lowhold",true))();
+end)
+
+lowhold.Name = "lowhold"
+lowhold.Parent = Main
+lowhold.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+lowhold.BorderColor3 = Color3.fromRGB(67, 255, 57)
+lowhold.Position = UDim2.new(0.0366795361, 0, 0.626168251, 0)
+lowhold.Size = UDim2.new(0, 220, 0, 74)
+lowhold.Font = Enum.Font.SourceSans
+lowhold.Text = "low-hold"
+lowhold.TextColor3 = Color3.fromRGB(67, 255, 57)
+lowhold.TextSize = 14.000
+lowhold.TextStrokeColor3 = Color3.fromRGB(67, 255, 57)
+lowhold.TextStrokeTransparency = 0.500
+lowhold.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/schizilla/lowhold/main/nebulahubV1",true))();
+end)
+
+Label_3.Name = "Label"
+Label_3.Parent = Main
+Label_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Label_3.BorderColor3 = Color3.fromRGB(67, 255, 57)
+Label_3.Position = UDim2.new(0.0115830116, 0, 0.17289719, 0)
+Label_3.Size = UDim2.new(0, 252, 0, 40)
+Label_3.Font = Enum.Font.SourceSansLight
+Label_3.Text = "boombox presets"
+Label_3.TextColor3 = Color3.fromRGB(67, 255, 57)
+Label_3.TextSize = 14.000
+Label_3.TextStrokeColor3 = Color3.fromRGB(67, 255, 57)
+Label_3.TextStrokeTransparency = 0.500
+
+Label_4.Name = "Label"
+Label_4.Parent = Main
+Label_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Label_4.BorderColor3 = Color3.fromRGB(67, 255, 57)
+Label_4.Position = UDim2.new(0.498069495, 0, 0.17289719, 0)
+Label_4.Size = UDim2.new(0, 255, 0, 40)
+Label_4.Font = Enum.Font.SourceSansLight
+Label_4.Text = "helpful shit"
+Label_4.TextColor3 = Color3.fromRGB(67, 255, 57)
+Label_4.TextSize = 14.000
+Label_4.TextStrokeColor3 = Color3.fromRGB(67, 255, 57)
+Label_4.TextStrokeTransparency = 0.500
